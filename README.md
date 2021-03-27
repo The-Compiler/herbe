@@ -126,7 +126,7 @@ sudo make install
 `make install` requires root privileges because it copies the resulting binary to `/usr/local/bin`. This makes `herbe` accessible globally.
 
 You can also use `make clean` to remove the binary from the build folder, `sudo make uninstall` to remove the binary from `/usr/local/bin` or just `make` to build the binary locally.
-
+4:     0x56254c9c11fc - core::fmt::write::hc902605fce7cd9d0
 ## Configuration
 herbe is configured at compile-time by editing `config.h`. Every option should be self-explanatory. There is no `height` option because height is determined by font size and text padding.
 
@@ -134,3 +134,7 @@ herbe is configured at compile-time by editing `config.h`. Every option should b
 
 ## Contribute
 If you want to report a bug or you have a feature request, feel free to [open an issue](https://github.com/dudik/herbe/issues).
+
+## Projects with herbe integration
+
+- [qutebrowser](https://qutebrowser.org/) supports showing web notifications via herbe, via the `content.notifications.presenter` setting.
